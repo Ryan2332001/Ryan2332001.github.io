@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: spaceMono;
+  src: url(fonts/SpaceMono-Regular.ttf);
+}
+
+body {
+  background-color:#ff1494;
+  font-family:"spaceMono", "Helvetica", sans-serif;
+}
+
+nav {
+  margin: auto;
+}
+
+pre {
+  font-family: spaceMono;
+}
+
+div,
+nav ul {
+  box-shadow: 5px 5px 5px #000000;
+}
+
+#navmenu {
+  display: block;
+  list-style-type: none;
+  max-width: 67%;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 5px;
+  padding: 25px;
+  overflow: hidden;
+  background-color: #ff42A9;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+/* the box sections */
+.sections {
+  background-color:#ff42A9;
+  max-width: 67%;
+  display: block;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 5px;
+  padding: 25px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow: auto;
+  border-radius: 10%;
+}
+
+
+p {
+  font-size: 1em;
+  text-align: left;
+  padding-top: 15px;
+}
+
+p.highlights {
+  background-color:#eb0080;
+}
+
+h1 {
+  max-width: fit-content;
+  font-size: 3em;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: aliceblue;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2em;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0 0 3px 0;
+}
+
+a {
+  color: rgb(59, 251, 104);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #fe71be;
+}
+
+img {
+  float: right;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #eb0080;
+}
+
+ul, ol {
+  list-style-position:inside;
+  padding-top: 15px;
+}
