@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Basics</title>
+
+</head>
+
+<body>
+
+  <h1>HTML Basics</h1>
+
+  <section style="background-color:beige;" id="setup" class="sections">
+
+    <h2>Getting Set Up</h2>
+
+    <p>All you need to write with HTML, CSS and JavaScript is a text editor - not a rich-text formatting program like Word, but TextEdit or Notepad will do it.</p>
+
+    <p>This semester we will be using <a href="https://code.visualstudio.com/">VSCode</a>, which is free and cross-platform.</p>
+
+    <p>You can add an extension that will run your HTML pages locally too, in your browser of choice - Live Server in VSCode.</p>
+
+    <img src="/images/liveServer.png" width="926px" alt="Live Server extension on VSCode's extension marketplace">
+
+    <p>
+      Browsers? Firefox all the way, but you're going to need to get used to using all of them for testing purposes, please make sure that you have at least 
+      Firefox and Chrome installed.
+    </p>
+
+    <!-- Where possible avoid long lines of code - as a rule of thumb you don't want to have to scroll left and right to view your code when editing it -->
+
+    <p>
+      The worksheets for the next few weeks introducing HTML, CSS & JavaScript have been designed for you to engage with both through the browser and VSCode at the 
+      same time. We have discussed how to view source (look at the code) of any website in class, it's an essential tool to learning about how others design for 
+      the web, but in this case I'm providing the source code for you to directly reference. Beyond being able to see how specifc code generates information in 
+      the browser you'll also be able to see some best practices of how it's formatted and organised.
+    </p>
+
+
+  </section>
+
+  <section style="background-color:darkseagreen;" id="boilerplate" class="sections">
+
+    <h2>Boilerplate Code</h2>
+
+    <img src="boilerplateHTML.png" width="926px" alt="boiler plate html code without any information in the body">
+
+    <p>The boilerplate code above, which we set up together last week, creates the basic structure for a web page.</p>
+
+    <!--
+      The &lt; and &gt; you can see throughout the HTML code are character entities which represent the less than < or greater than > signs - this is to stop the 
+      browser getting confused with their use as part of HTML tags, so instead we write them in this format.
+    -->
+
+    <p>The &lt;!DOCTYPE html&gt; tag tells browsers that the <b>document</b> - which is what one HTML file is called - contains HTML code.</p>
+
+    <p>
+      The &lt;html&gt; tag specifics where our HTML starts and stops - notice the tag is 'closed' with a &lt;/html&gt; tag at the end of the document - the forward 
+      slash indicates a closing tag. Not all tags need to be closed in this way but most do as it allows us to put stuff inside of them.
+    </p>
+
+    <p>
+      The &lt;head&gt; tag specifics a section of code which is loaded before the rest of the page - remember the browser will load tags in the order you write them, 
+      top to bottom, left to right.
+    </p>
+
+    <p>
+      The &lt;meta&gt; tag includes an attribute 'charset' - or character set - which is set to <a href="https://youtu.be/MijmeoH9LT4" target="_blank">UTF-8</a>, the 
+      standard for contemporary websites, ensuring all text characters are rendered properly, as well as details of the 'viewport' that will help us make our site 
+      responsive later.
+    </p>
+
+    <p>
+      You can see in the source code for this page that I haven't included imports for either CSS or JavaScript in the head tag - however you can see the addition 
+      of a new tag we didn't cover last week. The &lt;title&gt; tag specifies the title of the page in the browser tab above the webpage itself - for example 
+      'HTML Basics' on this page.
+    </p>
+
+    <p>The &lt;body&gt; tag specifies the body or substance of the page itself and is where the rest of your code goes.</p>
+
+    <p>
+      <u>Task:</u> Open the boilerplate folder from last week and add in a &lt;title&gt; inside of the &lt;head&gt; tag. You can write in a default title if you like 
+      however I tend to leave mine blank and just fill it in whenever I use the boilerplate as a template for a new project.
+    </p>
+
+  </section>
+
+  <section style="background-color:lavender;" id="elements" class="sections">
+
+    <h2>HTML Elements</h2>
+
+    <p>A <b>HTML element</b> is one piece of a HTML page - defined by a start tag and end tag and everything in between, as shown below.</p>
+
+    <img src="/images/element.png" width="926px" alt="diagram of a HTML element">
+
+    <p>
+      HTML elements can be <b>inside</b> - and therefore included in - other elements - this is called <b>nesting</b>. The outside element in this relationship is 
+      called the <b>parent</b> and the element contained inside is called the <b>child</b>.
+    </p>
+
+    <p>
+      In this way HTML elements can be thought of as containers - sometimes they contain information, sometimes they contain other HTML elements and sometimes 
+      they contain nothing at all.
+    </p>
+
+    <img src="/images/parentChild.png" width="926px" alt="one HTML element with another inside of it">
+
+    <p>
+      It is standard practice to use lowercase text for HTML tags and to indent one tab or two spaces to help show the relationship between <b>parent</b> and 
+      <b>child</b> elements when placing a HTML element inside another - as you can see in the boilerplate code above or the source code for this page. This 
+      formatting helps you to quickly read your code.
+    </p>
+
+    <p>People get very passionate about using either spaces or tabs for indents - just pick one and be consistent.</p>
+
+  </section>
+
+  <section style="background-color:gold;" id="basics" class="sections">
+
+    <h2>Basic Tags</h2>
+
+    <p>
+      Here are just some more basic element tags - all of these will require an accompanying closing tag and will display any text typed within in their own 
+      specifc manner.
+    </p>
+
+    <span>
+
+      <p style="color:red;">&lt;h1&gt; to &lt;h6&gt;</p>
+
+      <!-- Write your tests under the names like the commented example below -->
+      <!-- <h1>This is the largest heading</h1> -->
+
+      <p style="color:red;">&lt;p&gt;</p>
+
+      <p style="color:red;">&lt;button&gt;</p>
+
+      <p style="color:red;">&lt;ul&gt;</p>
+
+      <p style="color:red;">&lt;ol&gt;</p>
+
+      <p style="color:red;">&lt;li&gt;</p>
+
+      <p style="color:red;">&lt;b&gt;</p>
+
+      <p style="color:red;">&lt;strong&gt;</p>
+
+      <p style="color:red;">&lt;i&gt;</p>
+
+      <p style="color:red;">&lt;em&gt;</p>
+
+      <p style="color:red;">&lt;del&gt;</p>
+
+      <p style="color:red;">&lt;u&gt;</p>
+
+      <p style="color:red;">&lt;sup&gt;</p>
+
+      <p style="color:red;">&lt;sub&gt;</p>
+
+    </span>
+
+    <p>
+      <u>Task:</u> Test and identify the above tags by adding them below the &lt;p&gt; tags with their names in the source code for this page. They will all 
+      need to be closed by an accompanying tag, and the &lt;li&gt; tag will only work properly when nested inside &lt;ul&gt; & &lt;ol&gt;. Write what each of 
+      these do inside the tags.
+    </p>
+
+    <p>
+      <b>Tip</b> - Remember that HTML is designed specifically for information design and knowing which tag does what will give you a head start on the 
+      visual hierarchy of your page.
+    </p>
+
+  </section>
+
+  <section style="background-color:palegreen;" id="attributes" class="sections">
+
+      <h2>HTML Attributes</h2>
+
+      <p>
+        All HTML elements can have <b>attributes</b> that provide additional information about the element and are contained inside the start tag - they tend 
+        to look like this: name="value".
+      </p>
+
+      <img src="/images/attribute.png" width="926px" alt="diagram of a HTML element with an attribute">
+
+      <p>
+        When writing attribute names and values inside of the HTML tags use lowercase text, " " double quotes around the values and don't leave any spaces 
+        around the equal signs.
+      </p>
+
+      <p>Here are some common tag and attribute pairs:</p>
+
+      <p>
+        &lt;a&gt; and href - to insert a link just include the URL as the href value. You can then write whatever you like inside of the tag itself and it'll 
+        use the href to work out where to go.
+      </p>
+
+      <p>
+        &lt;img&gt; and src, width, height and alt - to insert an image, specify the source image, its size and provide 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attributes" target="_blank">alternative text</a>, an important first step in 
+        improving the accessibility of your site.
+      </p>
+
+      <p>And here some attributes that can be used with most tags:</p>
+
+      <p title="Title Attribute">
+        title - this can specify a title for the tag, like we did for our document, and allows that title to show while hovering over the tag with your cursor 
+        (try it on this sentence).
+      </p>
+
+      <p>
+        style - this allows us to specify how an element will appear in the browser, we'll get to this can do in more detail next week, but for now know that 
+        it can be used to change the element's appearance.
+      </p>
+
+      <p>
+        <b><u>
+          !IMPORTANT NOTE! - HTML, CSS and JavaScript use American English spelling 🙄 so for example while here in the instructions I refer to using a colour be sure 
+          to spell it color in your attributes.
+        </u></b>
+      </p>
+
+      <p><u>Task:</u> 
+        Open a new window in VSCode to open your assignment1 project folder inside where you need to add the following inside the &lt;body&gt;:
+        <ul>
+          <li>Add a page heading element to the page using an appropriate HTML tag from the previous section's list</li>
+          <li>Add an &lt;a&gt; tag to the &lt;body&gt; that links to the website you've chosen to research.</li>
+          <li>
+            Add a style attribute inside the opening &lt;body&gt; tag and use it to set the background colour for your webpage. You can see examples of how to write 
+            this in the &lt;section&gt; tags throughout the source code to this page. We'll discuss the multiple ways to choose colours next week but for now use one 
+            of the names from <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">this list</a>.
+          </li>
+        </ul>
+      </p>
+
+  </section>
+
+  <section style="background-color:lightgray;" id="block-and-inline" class="sections">
+
+    <h2>HTML Block and Inline Elements</h2>
+
+    <p>All elements have default ways they are displayed - the most common are <b>block</b> and <b>inline</b>.</p>
+
+    <p><b>Block</b> level elements always start on a new line and take up the full width available of their parent element.</p>
+
+    <p>&lt;div&gt; is a block level element that is specifically used as container for other elements.</p>
+
+    <p><b>Inline</b> elements don't take a new line and only take up the space necessary.</p>
+
+    <p>&lt;span&gt; is an inline element that is specifically used as a container for other elements.</p>
+
+    <p>
+      Inside the &lt;p&gt; tag below this one there is an <b>inline</b> &lt;span&gt; element - try changing out the tags so it's a &lt;div&gt; instead and notice 
+      how it changes on the webpage.
+    </p>
+    
+    <p>This is some test writing so you can see <span>how elements react</span> to being either inline or block.</p>
+
+    <p>These elements do not have required attributes but are commonly used with style, class and id.</p>
+
+    <p>The class attribute is used to specify a name for a group of tags so that they can be used together.</p>
+
+    <p>The id attribute is used to specify a unique identifier for a tag.</p>
+
+    <p>Examples of class and id can be seen if you <b><i>view source</i></b> on this page.</p>
+
+    <p>
+      While it is quite common to just use &lt;div&gt; and &lt;span&gt; elements when constructing web pages, both contain little information about what is inside 
+      them beyond whether they should display as <b>block</b> or <b>inline</b>. &lt;div&gt; is just a "generic container" as is &lt;span&gt;. Information design 
+      best practice is to always use the most appropriate element for what's inside it - for example you can see that each section of this web page is wrapped in 
+      a &lt;section&gt; element rather than a &lt;div&gt; element, even if they're "functionally" the same. For an extensive list of the different elements and 
+      brief descriptions about what they are used for you can look at 
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">this MDN page</a> (this is also linked in the Week 2 modules).
+    </p>
+
+    <p>
+      <u>Task:</u> Add a container to assignment1's index.html &lt;body&gt; for each of this week's research questions - you might want to refer to the above link to get 
+      some ideas. Then add in an appropriate heading element to each container with the relevant question and a paragraph element to contain your response.
+    </p>
+
+  </section>
+
+  <section style="background-color:plum;" id="av" class="sections">
+
+      <h2>HTML Audio and Video</h2>
+
+      <p>
+        Audio and video can be embedded in an HTML page using the &lt;audio&gt; and &lt;video&gt; elements - like &lt;img&gt; in both cases a src attribute is needed to 
+        link to a media file.
+      </p>
+
+      <p>
+        Source links to media can be given as <b>absolute</b> or <b>relative</b> paths - have a look at href's in the page's source code in the following examples:
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=SsoOG6ZeyUI" target="_blank">this is an absolute path to another website</a></li>
+          <li><a href="selfie.jpg" target="_blank">this is a relative path to a local file</a></li>
+          <li>
+            <a href="sounds/ping.mp3" target="_blank">this is a relative path to a file in a folder in the same directory as this HTML file</a> and below is the same 
+            file embedded in our page with an audio element
+          </li>
+        </ul>
+      </p>
+
+      <p>It is best practice to use relative paths where possible.</p>
+
+      <audio src="sounds/ping.mp3" controls></audio>
+
+      <p>
+        The &lt;audio&gt; tag above has two attributes - src with works in a similar way to href but links in the audio file you want it to play, and the controls 
+        attribute which doesn't need a value, if it's included it gives users a built in set of controls for the audio file.
+      </p>
+
+      <p>The video element works in much the same way and makes use of both src and controls attributes.</p>
+
+      <p>
+        <u>Task:</u> Add a video file to the HTML project folder and try adding it to this page using a video element in the source code below the audio element, making 
+        sure to link the src with a relative path and add some controls to try and play the video back in the browser. Once you've got that working, take a screenshot 
+        of your research website, copy it into your assignment1 folder and include it in your HTML using an img element with a relative src path.
+      </p>
+
+  </section>
+
+  <section style="background-color:aliceblue;" id="comments" class="sections">
+
+      <h2>HTML Comments</h2>
+
+      <p>
+        You can add comments to your code - text that will be ignored by the browser - using the &lt;!-- and --&gt; tags - see the example in the code below. I've also 
+        added several other comments to the source code as notes explain some extra details about writing HTML.
+      </p>
+
+      <!-- This is a comment -->
+
+      <p>
+        A key part of assessments two and three this semester will require the use of comments in your code - we'll talk more about how to approach this in later weeks 
+        but for now it's just good to know how to write them in the different web languages - I'll show examples of CSS and JavaScript comments in their respective 
+        worksheets.
+      </p>
+
+      <p><u>Task:</u> Add a comment to assignment1's index.html briefly explaining which container element to place your questions inside of and why.</p>
+
+  </section>
+
+
+  <section style="background-color:skyblue;" id="key-task" class="sections">
+
+    <h2>Key Task for the Week</h2>
+
+    <p>
+      Your assignment1's index.html should now include a page title and heading, a screenshot of and link to your research website and container elements ready for 
+      each of this week's research questions. Now all you need to do is fill in the questions and answers - we'll get to additional CSS styling techniques next week 
+      but you already have a good start most of the assignment's HTML coding requirements.
+    </p>
+
+  </section>
+
+</body>
+
+</html>
