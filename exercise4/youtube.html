@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>youtube</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="youtube.css" >
+    <link rel="stylesheet" href="video-style.css" >
+
+    <script src="player.js" defer></script>
+    
+  </head>
+
+  <body>
+
+    <div class="header">
+
+      
+      <div class="left-section">
+
+        <img class="hamburger" src="icons/hamburger-menu.svg">
+
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+
+      </div>
+
+      <div class="middle-section">
+
+        <input class="search-box"    type="text" placeholder="Search">
+
+        <div class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+        </div>
+
+        <div class="voice-button">
+          <img class="voice-icon" src="icons/voice-search-icon.svg">
+        </div>
+
+      </div>
+
+      <div class="right-section">
+
+       <img class="upload-icon" src="icons/upload.svg" >
+
+       <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+
+       <img class="notification-icon" src="icons/notifications.svg">
+
+       <img class="my-channel" src="channel-pic/logohuan high quality vestion.png">
+       
+
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="main-boddy">
+
+        <div class="player">
+  
+          <video id="media" controls>
+            <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4">
+          </video>
+          
+    
+          <div class="controls video-controls">
+            <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+            <button class="stop" data-icon="S" aria-label="stop"></button>
+            <div class="timer"><div class="timer-bar"></div><span aria-label="timer" class="timer-span">00:00</span></div>
+            <button class="rwd" data-icon="B" aria-label="rewind"></button>
+            <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+    
+          </div>
+  
+          <div class="info"> <h3 class="title"> 1</h3>
+            <p class="attribution">
+            "<a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia/sounds/516902">Ambient Wave 56 - (MSfxP7 - 78)</a>" by 
+            <a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia">Erokia</a> is licensed under 
+            <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+              <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+              <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+              <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            </a>. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+  
+      <div class="video-list">
+  
+  
+  
+        <div class="vid active">
+  
+          <div class="player">
+  
+            <video id="media" controls>
+              <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4">
+            </video>
+      
+            <div class="controls video-controls">
+              <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+              <button class="stop" data-icon="S" aria-label="stop"></button>
+              <div class="timer"><div class="timer-bar"></div><span aria-label="timer" class="timer-span">00:00</span></div>
+              <button class="rwd" data-icon="B" aria-label="rewind"></button>
+              <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+      
+            </div>
+    
+            <div class="info"> <h3 class="title"> 2</h3>
+              <p class="attribution">
+              "<a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia/sounds/516902">Ambient Wave 56 - (MSfxP7 - 78)</a>" by 
+              <a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia">Erokia</a> is licensed under 
+              <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+              </a>. 
+            </p></div>
+  
+          </div>
+  
+        </div>
+  
+  
+  
+        <div class="vid">
+  
+          <div class="player">
+  
+            <video id="media" controls>
+              <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4">
+            </video>
+      
+            <div class="controls video-controls">
+              <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+              <button class="stop" data-icon="S" aria-label="stop"></button>
+              <div class="timer"><div class="timer-bar"></div><span aria-label="timer" class="timer-span">00:00</span></div>
+              <button class="rwd" data-icon="B" aria-label="rewind"></button>
+              <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+      
+            </div>
+    
+            <div class="info"> <h3 class="title"> 3</h3>
+              <p class="attribution">
+              "<a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia/sounds/516902">Ambient Wave 56 - (MSfxP7 - 78)</a>" by 
+              <a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia">Erokia</a> is licensed under 
+              <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+              </a>. 
+            </p></div>
+            
+          </div>
+  
+        </div>
+  
+  
+  
+        <div class="vid">
+  
+          <div class="player">
+  
+            <video id="media" controls>
+              <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4">
+            </video>
+      
+            <div class="controls video-controls">
+              <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+              <button class="stop" data-icon="S" aria-label="stop"></button>
+              <div class="timer"><div class="timer-bar"></div><span aria-label="timer" class="timer-span">00:00</span></div>
+              <button class="rwd" data-icon="B" aria-label="rewind"></button>
+              <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+      
+            </div>
+    
+            <div class="info"> <h3 class="title"> 4</h3>
+              <p class="attribution">
+              "<a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia/sounds/516902">Ambient Wave 56 - (MSfxP7 - 78)</a>" by 
+              <a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia">Erokia</a> is licensed under 
+              <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+              </a>. 
+            </p></div>
+            
+          </div>
+  
+        </div>
+
+        <div class="vid">
+  
+          <div class="player">
+  
+            <video id="media" controls>
+              <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4">
+            </video>
+      
+            <div class="controls video-controls">
+              <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+              <button class="stop" data-icon="S" aria-label="stop"></button>
+              <div class="timer"><div class="timer-bar"></div><span aria-label="timer" class="timer-span">00:00</span></div>
+              <button class="rwd" data-icon="B" aria-label="rewind"></button>
+              <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+      
+            </div>
+    
+            <div class="info"> <h3 class="title"> 5</h3>
+              <p class="attribution">
+              "<a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia/sounds/516902">Ambient Wave 56 - (MSfxP7 - 78)</a>" by 
+              <a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia">Erokia</a> is licensed under 
+              <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+              </a>. 
+            </p></div>
+            
+          </div>
+  
+        </div>
+
+        <div class="vid">
+  
+          <div class="player">
+  
+            <video id="media" controls>
+              <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4">
+            </video>
+      
+            <div class="controls video-controls">
+              <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+              <button class="stop" data-icon="S" aria-label="stop"></button>
+              <div class="timer"><div class="timer-bar"></div><span aria-label="timer" class="timer-span">00:00</span></div>
+              <button class="rwd" data-icon="B" aria-label="rewind"></button>
+              <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+      
+            </div>
+    
+            <div class="info"> <h3 class="title"> 6</h3>
+              <p class="attribution">
+              "<a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia/sounds/516902">Ambient Wave 56 - (MSfxP7 - 78)</a>" by 
+              <a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia">Erokia</a> is licensed under 
+              <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+              </a>. 
+            </p></div>
+            
+          </div>
+  
+        </div>
+      </div>
+  
+
+    </div>
+
+    
+    
+   
+  </body>
+
+</html>
