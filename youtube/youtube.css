@@ -1,0 +1,228 @@
+
+
+
+p{
+  font-family: roboto;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+body {
+  margin: 0;
+  padding-top: 80px;
+  
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 2000px;
+}
+
+
+.search-box {
+
+  flex:1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba( 0,0,0,0.05);
+  width: 0;
+}
+
+.search-box::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.hamburger {
+  height: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.youtube-logo{
+  height: 20px;
+}
+
+
+.header {
+  display: flex;
+  height: 55px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  background-color: rgb;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: rgb(228, 228, 228);
+  background-color: white;
+}
+
+
+.left-section {
+  display: flex;
+  align-items: center;
+  
+}
+
+.middle-section {
+  
+  flex: 1;
+  margin-left: 60px;
+  max-width: 470px;
+  display: flex;
+  align-items: center;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 60px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.search-icon {
+  height: 25px;
+  margin-top: 4px;
+}
+
+.voice-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin-right: 20px;
+  
+}
+
+.voice-icon {
+  height: 24px;
+  
+  
+}
+.right-section {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 182px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.upload-icon {
+  height: 24px;
+}
+
+.youtube-apps-icon {
+  height: 24px;
+}
+
+.notification-icon {
+  height: 24px;
+}
+
+.my-channel{
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(211, 211, 211);
+}
+
+.home-icon,
+.explore-icon,
+.subscrip-icon,
+.originals-icon,
+.youtube-music-icon,
+.library-icon {
+  height: 24px;
+  
+}
+
+.main-boddy {
+  display: grid;
+  width: 100%;
+  margin-left: 20px;
+  
+}
+
+video {
+width: 100%;  
+}
+
+.info
+{
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+
+
+.container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 5px 5% ;
+}
+
+.container .video-list{
+  background: rgb(233, 232, 232);
+  height: 520px;
+  overflow-y: scroll ;
+  
+}
+
+.container .video-list::-webkit-scrollbar{
+  width: 7px;
+}
+
+.container .video-list::-webkit-scrollbar-track{
+  background: #ccc;
+  border-radius: 50px;
+
+}
+
+.container .video-list::-webkit-scrollbar-thumb{
+  background: rgb(88, 88, 88);
+  border-radius: 50px;
+
+}
+
+.container .video-list .vid{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container .video-list .vid:hover {
+  background: lightgoldenrodyellow;
+}
+
+.container .video-list .vid.active{
+  background: rgb(81, 188, 255);
+}
