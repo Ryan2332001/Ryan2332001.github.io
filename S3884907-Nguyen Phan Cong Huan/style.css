@@ -1,0 +1,438 @@
+p{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Irish Grover', cursive;
+  scroll-behavior: smooth;
+
+  
+}
+  
+body{
+  background: #FDF7F4;
+  min-height: 100vh;
+  
+}
+
+
+
+
+.left{
+  position: absolute;
+width: ;
+height: 7260px;
+left: 0px;
+top: 179px;
+background-color: red;
+width: ;
+}
+
+
+.tile{
+height: 77px;
+left: 328px;
+top: 56px;
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+color: #262514;
+text-shadow: 13px 10px 4px rgba(0, 0, 0, 0.25);
+display: flex;
+justify-content: center;
+}
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+background: #D3C7BA;
+height: 7439px;
+}
+
+section{
+position: relative;
+width: 1440px;
+height: 7400px;
+
+
+
+  background: #FDF7F4;
+
+}
+
+.frametop {
+  position: absolute;
+width: 1383px;
+height: 179px;
+left: 0%;
+top: 0px;
+right: 100px;
+background: #D3C7BA;
+box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.frameleft {
+  position: absolute;
+width: 127px;
+height: 7241px;
+left: 0px;
+top: 179px;
+
+background: #D3C7BA;
+box-shadow: 9px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frameright {
+  position: absolute;
+width: 100%;
+height: 7420px;
+left: 1383px;
+top: 0;
+
+background: #D3C7BA;
+box-shadow: -7px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bot {
+  position: absolute;
+width: 1440px;
+height: 159px;
+left: 0px;
+top: 7260px;
+
+background: #D3C7BA;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cloud1 {
+  position: absolute;
+width: 1362px;
+height: 444px;
+left: 56px;
+top: 133px;
+transition: transform 1s linear;
+}
+
+
+
+.poorhouse {
+  display: inline-block;
+  position: absolute;
+width: 1340px;
+height: 648px;
+left: 81px;
+top: 460px;
+transition: transform 1s linear;
+
+}
+
+.poorhouse:hover {
+  transform: scale(1.1);
+}
+
+.ybroder{
+  position: absolute;
+width: 268px;
+height: 349px;
+left: 966px;
+top: 836px;
+
+filter: drop-shadow(-14px 8px 4px rgba(0, 0, 0, 0.25));
+}
+
+.p1 {
+  position: absolute;
+width: 615ch;
+height: 100;
+left: 145px;
+top: 422px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5em;
+line-height: 29px;
+
+color: #0E0E0E;
+
+animation: typing 18s steps(44), blink .10s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  
+  from {
+    width: 0
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.p2 {
+  position: absolute;
+width: 586px;
+height: 412px;
+left: 145px;
+top: 460px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+}
+
+.richhouse{
+  position: absolute;
+width: 1154px;
+height: 874px;
+left: 46px;
+top: 803px;
+transition: transform 1s linear;
+}
+
+.richhouse:hover{
+  transform: scale(1.05);
+}
+.obroder{
+  position: absolute;
+  width: 280px;
+  height: 471px;
+  left: 670px;
+  top: 868px;
+
+filter: drop-shadow(-19px 11px 4px rgba(0, 0, 0, 0.25));
+}
+
+.cloud2{
+  position: absolute;
+width: 1394px;
+height: 429px;
+left: 46px;
+top: 1330px;
+}
+
+.tree{
+  position: absolute;
+width: 764px;
+height: 1017px;
+left: 657px;
+top: 1635px;
+}
+
+.p3 {
+  position: absolute;
+width: 493px;
+height: 679px;
+left: 148px;
+top: 1665px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+}
+
+.bird {
+  position: absolute;
+width: 779px;
+height: 911px;
+left: 109px;
+top: 2106px;
+}
+
+.ybrotherlookup{
+  position: absolute;
+width: 1280px;
+height: 756px;
+left: 109px;
+top: 2639px;
+}
+
+.island{
+  position: absolute;
+width: 1252px;
+height: 586px;
+left: 169px;
+top: 3586px;
+}
+
+.bird2{
+  position: absolute;
+width: 773px;
+height: 630px;
+left: 46px;
+top: 3732px;
+filter: drop-shadow(-15px -3px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.bird2-1 {
+  position: absolute;
+width: 949px;
+height: 576px;
+left: -32px;
+top: 3759px;
+filter: drop-shadow(-19px -2px 7px rgba(0, 0, 0, 0.25));
+}
+
+
+.p4 {
+  position: absolute;
+width: 870px;
+height: 679px;
+left: 169px;
+top: 3395px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+}
+
+.p5 {
+  position: absolute;
+width: 680px;
+height: 793px;
+left: 674px;
+top: 4223px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: right;
+
+color: #000000;
+
+}
+
+.p6 {
+  position: absolute;
+width: 869px;
+height: 793px;
+left: 169px;
+top: 5427px;
+
+font-family: 'Irish Grover';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+}
+.gold {
+  position: absolute;
+  width: 438px;
+  height: 434px;
+  left: 110.3px;
+  top: 4405px;
+  
+  
+  filter: drop-shadow(-16px -11px 4px rgba(0, 0, 0, 0.25));
+  transform: rotate(53.15deg);
+}
+
+.goodwork {
+  position: absolute;
+width: 933px;
+height: 869px;
+left: 480px;
+top: 4507px;
+}
+
+.obrothergold{
+  position: absolute;
+width: 744px;
+height: 634px;
+left: 645px;
+top: 5427px;
+}
+
+.fall {
+  position: absolute;
+width: 713px;
+height: 683px;
+left: 398px;
+top: 6135px;
+
+}
+
+.water {
+  position: absolute;
+width: 1394px;
+height: 245px;
+left: 46px;
+top: 6893px;
+}
+
+.water2 {
+  position: absolute;
+width: 1394px;
+height: 245px;
+left: 46px;
+top: 7015px;
+}
+
+
+.body{
+  position: absolute;
+  width: 100%;
+  height: 6637vh;
+
+
+  background: #FDF7F4;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: lightgrey;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disppear{
+  animation: vanish 2s forwards;
+}
+@keyframes vanish {
+ 
+  50%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.open {
+  width: 100%;
+}
