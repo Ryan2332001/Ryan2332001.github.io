@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../e4-dj-mix/e4-dj-mix"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "e4-dj-mix"
+	}
+}
