@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3884907 DJ</title>
+    <link rel="stylesheet" href="styleS.css">
+    <script src="playerControls.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>S3884907 NGUYEN PHAN CONG HUAN A2 - Browser-based Interactive Experiments</h1>
+    <div class="background-container">
+        <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
+            <iframe src="https://giphy.com/embed/ii5AfL3XzWRLo3SI9S" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <p><a href="https://giphy.com/gifs/DisneyJunior-disney-junior-disneyjunior-ii5AfL3XzWRLo3SI9S">via GIPHY</a></p>
+    </div>
+
+    <div class="dj-table">
+        <div class="deck left-deck">
+            <img class="vinyl" id="leftVinyl" src="./bg-band.png" alt="Left Deck Vinyl">
+        </div>
+        <div class="deck-controls">
+            <canvas id="waveformCanvas" width="300" height="100"></canvas>
+            <audio id="audioElement">
+                <source src="CHAABI-MAROC-MIX_CHAABI-MIX.mp3" type="audio/mp3">
+            </audio>
+            <div class="controls-box">
+                <button class="audio-control-button" id="rewindButton" data-tooltip="Rewind"></button>
+                <button class="audio-control-button" id="playButton" data-tooltip="Play/Pause"></button>
+                <button class="audio-control-button" id="fastForwardButton" data-tooltip="Fast Forward"></button>
+                <button class="audio-control-button" id="muteButton" data-tooltip="Mute/Unmute"></button>
+                <button class="audio-control-button" id="loopButton" data-tooltip="Toggle Loop"></button>
+            </div>
+            <progress class="audio-progress-bar" id="progressBar" value="0"></progress>
+            <button id="increasePitch" data-tooltip="Increase Pitch">Increase Pitch</button>
+            <button id="decreasePitch" data-tooltip="Decrease Pitch">Decrease Pitch</button>
+        </div>
+        <div class="deck right-deck">
+            <img class="vinyl" id="rightVinyl" src="./bg-band.png" alt="Right Deck Vinyl">
+        </div>
+    </div>
+</body>
+</html>
