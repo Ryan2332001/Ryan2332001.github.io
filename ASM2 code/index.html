@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-content">
+      <h1>A2 - Browser-based Interactive Experiments</h1>
+      <h2>Music video</h2>
+      <h3>S3884907 NGUYEN PHAN CONG HUAN</h3>
+    </div>
+  </div>
+
+  <!-- Background Video Section -->
+  <video id="backgroundVideo" class="background-video" muted loop>
+    <source src="path/to/your/background-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Marquee Containers -->
+  <div class="marquee-container left">
+    <div class="marquee-content">
+      <p>Browser-based Interactive Experiments</p>
+      <br>
+      <p>Browser-based Interactive Experiments</p>
+      <br>
+      <p>Browser-based Interactive Experiments</p>
+    </div>
+  </div>
+
+  <div class="marquee-container right">
+    <div class="marquee-content">
+      <p>S3884907 NGUYEN PHAN CONG HUAN</p>
+      <br>
+      <p>S3884907 NGUYEN PHAN CONG HUAN</p>
+      <br>
+      <p>S3884907 NGUYEN PHAN CONG HUAN</p>
+      <br>
+      <p>S3884907 NGUYEN PHAN CONG HUAN</p>
+    </div>
+  </div>
+
+  <!-- Top Visualizer -->
+  <canvas id="topVisualizer"></canvas>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <div class="video-container">
+      <iframe id="vimeoPlayer" src="https://player.vimeo.com/video/949796129?badge=0&autopause=0&player_id=0&app_id=58479&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="miac"></iframe>
+    </div>
+  </section>
+
+  <!-- Floating Control Buttons -->
+  <div class="floating-buttons">
+    <button id="playPause" class="control-button">
+      <img src="icons8-play-64 green.png" alt="Play" class="icon" data-hover="icons8-play.gif">
+    </button>
+    <button id="stop" class="control-button">
+      <img src="icons8-stop-64.png" alt="Stop" class="icon" data-hover="stop.gif">
+    </button>
+    <button id="speedDown" class="control-button">
+      <img src="icons8-rewind-64.png" alt="Speed Down" class="icon" data-hover="speed-down.gif">
+    </button>
+    <button id="speedUp" class="control-button">
+      <img src="icons8-fast-forward-64.png" alt="Speed Up" class="icon" data-hover="speed-up.gif">
+    </button>
+    <button id="mute" class="control-button">
+      <img src="icons8-mute-64.png" alt="No Audio" class="icon" data-hover="mute.gif">
+    </button>
+    <button id="volumeDown" class="control-button">
+      <img src="icons8-low-volume-64.png" alt="Low Volume" class="icon" data-hover="volume-down.gif">
+    </button>
+    <button id="volumeUp" class="control-button">
+      <img src="icons8-audio-64.png" alt="Increase Volume" class="icon" data-hover="volume-up.gif">
+    </button>
+    <button id="fullscreen" class="control-button">
+      <img src="icons8-expand-48.png" alt="Fullscreen" class="icon" data-hover="fullscreen.gif">
+    </button>
+  </div>
+
+  <audio id="audioPlayer" src="music.mp3" type="audio/mp3"></audio>
+
+  <canvas id="visualizer"></canvas>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="Java.js"></script>
+</body>
+</html>
