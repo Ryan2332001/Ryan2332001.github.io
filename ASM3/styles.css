@@ -1,0 +1,191 @@
+/* Styling for the body, providing a black background and neon green text */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000; /* Black background */
+    color: #00ff00; /* Neon green text */
+}
+
+/* Styling for the header */
+header {
+    color: #e809e8; /* Neon pink text */
+    font-size: 40px; /* Large font size */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 30px #00ff00; /* Neon text shadow */
+    text-align: center; /* Centered text */
+}
+
+/* Styling for sections */
+section {
+    margin: 20px;
+    padding: 20px;
+    text-align: center; /* Centered content */
+}
+
+/* Styling for section titles */
+.section-title {
+    font-size: 40px; /* Large font size */
+    margin-bottom: 40px;
+}
+
+/* Styling for input containers */
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for input fields and buttons */
+.input-container input, .input-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000; /* Black background */
+    color: #00ff00; /* Neon green text */
+    border: 2px solid #00ff00; /* Neon green border */
+    box-shadow: 0 0 10px #00ff00; /* Neon glow */
+    cursor: pointer;
+}
+
+/* Adding margin between input fields and buttons */
+.input-container input {
+    margin-right: 10px;
+}
+
+/* Styling for the wheel container */
+.wheel-container {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+/* Styling for the Three.js container */
+#three-container {
+    width: 600px;
+    height: 600px;
+}
+
+/* Styling for the pointer */
+#pointer {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #ff00ff; /* Neon pink */
+    position: absolute;
+    top: 20px; /* Adjust based on wheel size */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0 0 10px #ff00ff; /* Neon glow */
+}
+
+/* Styling for buttons */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000; /* Black background */
+    color: #00ff00; /* Neon green text */
+    border: 2px solid #00ff00; /* Neon green border */
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ff00; /* Neon glow */
+}
+
+/* Styling for horizontal rules */
+hr {
+    width: 80%;
+    border: 1px solid #00ff00; /* Neon green border */
+    margin: 40px 0;
+    box-shadow: 0 0 10px #00ff00; /* Neon glow */
+}
+
+/* Styling for the memory game */
+.memory-game {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* Styling for memory cards */
+.memory-card {
+    width: 100px;
+    height: 100px;
+    background-color: #000; /* Black background */
+    border: 2px solid #00ff00; /* Neon green border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ff00; /* Neon glow */
+    position: relative;
+    perspective: 1000px;
+}
+
+/* Styling for images on memory cards */
+.memory-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+/* Styling for front face of memory cards */
+.memory-card .front-face {
+    transform: rotateY(180deg);
+}
+
+/* Styling for flipped memory cards */
+.memory-card.flip .front-face {
+    transform: rotateY(0);
+}
+
+.memory-card.flip .back-face {
+    transform: rotateY(180deg);
+}
+
+/* Styling for the Rock, Paper, Scissors container */
+.rps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for Rock, Paper, Scissors options */
+.rps-options {
+    display: flex;
+    gap: 10px;
+}
+
+/* Styling for Rock, Paper, Scissors buttons */
+.rps-button {
+    padding: 20px;
+    font-size: 24px;
+    background-color: #000; /* Black background */
+    color: #00ff00; /* Neon green text */
+    border: 2px solid #00ff00; /* Neon green border */
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ff00; /* Neon glow */
+}
+
+/* Ensuring icons do not capture clicks */
+.rps-button i {
+    pointer-events: none;
+}
+
+/* Styling for Rock, Paper, Scissors result display */
+#rps-result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00; /* Neon text shadow */
+}

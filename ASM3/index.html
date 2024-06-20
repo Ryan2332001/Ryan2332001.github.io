@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3884907 Mini Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1> Mini Games</h1>
+    </header>
+    <main>
+        <section>
+            <div class="section-title">Wheel of Names</div>
+            <div class="input-container">
+                <!-- Input field for entering a name -->
+                <input type="text" id="name-input" placeholder="Enter a name">
+                <!-- Button to add the entered name to the wheel -->
+                <button id="add-name">Add Name</button>
+            </div>
+            <div class="wheel-container">
+                <!-- Container for rendering the 3D wheel -->
+                <div id="three-container"></div>
+                <!-- Pointer to indicate the selected name -->
+                <div id="pointer"></div>
+            </div>
+            <!-- Button to spin the wheel -->
+            <button id="spin-wheel">Spin</button>
+            <!-- Div to display the result of the spin -->
+            <div id="result"></div>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <div class="section-title">Memory Game</div>
+            <!-- Container for the Memory Game -->
+            <div class="memory-game" id="memory-game"></div>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <div class="section-title">Rock, Paper, Scissors</div>
+            <div class="rps-container">
+                <!-- Buttons for Rock, Paper, Scissors options -->
+                <div class="rps-options">
+                    <button id="rock" class="rps-button"><i class="fas fa-hand-rock"></i></button>
+                    <button id="paper" class="rps-button"><i class="fas fa-hand-paper"></i></button>
+                    <button id="scissors" class="rps-button"><i class="fas fa-hand-scissors"></i></button>
+                </div>
+                <!-- Div to display the result of the Rock, Paper, Scissors game -->
+                <div id="rps-result"></div>
+            </div>
+        </section>
+    </main>
+    <audio id="spin-sound" src="path_to_your_spin_sound.mp3"></audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/loaders/FontLoader.js"></script>
+    <script src="https://threejs.org/examples/fonts/helvetiker_regular.typeface.json"></script>
+    <script src="scripts.js"></script>
+    <script src="memory-game.js"></script>
+    <script src="rps-game.js"></script>
+</body>
+</html>
